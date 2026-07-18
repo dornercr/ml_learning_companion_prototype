@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#08111f">
+  <meta name="description" content="ML Learning Companion: an interactive, self-instructional introduction to machine learning.">
+  <title>ML Learning Companion</title>
+  <link rel="stylesheet" href="tailwind.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="min-h-screen bg-slate-950 text-slate-100 antialiased selection:bg-cyan-300 selection:text-slate-950">
+  <a class="skip-link" href="#main-content">Skip to learning content</a>
+  <div id="app" class="min-h-screen"></div>
+  <div id="toast-region" class="pointer-events-none fixed right-4 top-4 z-[100] flex w-[min(24rem,calc(100vw-2rem))] flex-col gap-3" aria-live="polite" aria-atomic="true"></div>
+  <div id="confetti-layer" class="pointer-events-none fixed inset-0 z-[120] overflow-hidden" aria-hidden="true"></div>
+  <noscript>
+    <div class="mx-auto my-12 max-w-xl rounded-3xl border border-amber-400/30 bg-amber-300/10 p-8 text-amber-100">
+      ML Learning Companion needs JavaScript for navigation, practice feedback, progress tracking, and assessment.
+    </div>
+  </noscript>
+  <script src="data.js"></script>
+  <script src="core.js"></script>
+  <script src="screens-learn.js"></script>
+  <script src="screens-apply.js"></script>
+</body>
+</html>
